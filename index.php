@@ -8,6 +8,16 @@
 
 <?php
     class Movie {
-        
+        public $name;
+        public $genre;
     }
+
+    $sonatine = new Movie();
+    $sonatine->name = 'Sonatine';
+    $sonatine->genre = 'Crime';
+
+    $fargo = new Movie(); 
+    $fargo->name = 'Fargo';
+    $sonatine->genre = 'Thriller';
+
 ?>
