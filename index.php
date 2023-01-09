@@ -7,17 +7,23 @@
 -->
 
 <?php
-    class Movie {
-        public $name;
-        public $genre;
+
+class Movie
+{
+    public $name;
+    public $genre;
+
+    public function __construct($_name, $_genre)
+    {
+        $this->name = $_name;
+        $this->genre = $_genre;
     }
+}
 
-    $sonatine = new Movie();
-    $sonatine->name = 'Sonatine';
-    $sonatine->genre = 'Crime';
+$sonatine = new Movie('Sonatine', 'Crime');
+$fargo = new Movie('Fargo', 'Thriller');
 
-    $fargo = new Movie(); 
-    $fargo->name = 'Fargo';
-    $sonatine->genre = 'Thriller';
+// print_r($sonatine);
+// print_r($fargo);
 
 ?>
