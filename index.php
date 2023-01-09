@@ -18,12 +18,17 @@ class Movie
         $this->name = $_name;
         $this->genre = $_genre;
     }
+
+    public function description()
+    {
+        return $this->name . " è un film " . $this->genre;
+    }
 }
 
 $sonatine = new Movie('Sonatine', 'Crime');
 $fargo = new Movie('Fargo', 'Thriller');
 
-// print_r($sonatine);
-// print_r($fargo);
+echo $sonatine->description() . "<br>";
+echo $fargo->description();
 
 ?>
